@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+<a href="{% url 'homepage'%}" value="button">Go back</a>
+<h1>Txt entered by user:</h1>
+
+{{fulltext}}
+
+<h1>Numbers of words entered is:</h1>
+
+{{wordcount}}
+
+
+<h2>Each word entered is:</h2>
+
+{% for word, i in word1 %}
+{{ word }}
+<br/>
+{{ i }}
+<br/>
+{% endfor %}
+
+</body>
+</html>
